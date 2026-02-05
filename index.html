@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Loader Logo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <img src="HOOPS 4 A CAUSE-Photoroom.png" alt="Logo">
+  </div>
+
+
+  <div id="content">
+    <h1>Bienvenue sur H4AC</h1>
+  </div>
+  
+
+  <div class="logo">
+    <div class="logo-inner">
+      <img src="HOOPS 4 A CAUSE-Photoroom.png" alt="" width="150">
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<script>
+
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+    const logoInner = document.querySelector(".logo-inner");
+
+    setTimeout(() => {
+      loader.style.opacity = 0;
+      content.style.display = "block";
+      logoInner.classList.add("anime");
+    }, 2000);
+  });
+
+
+</script>
