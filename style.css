@@ -60,7 +60,7 @@ body {
   }
 
   70% {
-    transform: scale(2.2) rotate(180deg);
+    transform: scale(2.2) rotate(-180deg);
   
   }
 
